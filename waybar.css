@@ -1,0 +1,54 @@
+@define-color background #26173E;
+@define-color foreground #46FEEC;
+@define-color border alpha(@accent, 0.5);
+@define-color accent #DA11C9;
+@define-color fire #DA11C9;
+@define-color yellow #FFFF4C;
+@define-color red #FF003C;
+@define-color critical #FF003C;
+@define-color panel-tint rgba(218, 17, 201, 0.08);
+@define-color panel alpha(@background, 0.85);
+
+window#waybar {
+    background: #26173E;
+    color: @foreground;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    margin: 6px 8px 0;
+    padding: 2px 6px;
+    background: linear-gradient(to bottom, @panel-tint, @panel);
+    border: 1px solid @border;
+    border-radius: 12px;
+}
+
+#workspaces button.active,
+#workspaces button.focused,
+#custom-launcher,
+#window {
+    color: @accent;
+}
+
+#battery.critical:not(.charging),
+#temperature.critical,
+#cpu.critical,
+#memory.critical {
+    color: @critical;
+}
+
+/* Opaque popups, menus, and tooltips */
+tooltip,
+menu {
+    background: #26173E;
+    color: @foreground;
+    border: 1px solid @accent;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+tooltip label,
+menu label {
+    color: @foreground;
+}

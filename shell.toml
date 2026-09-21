@@ -1,0 +1,165 @@
+# Cyberpunk Edgerunners Theme
+# Neon fuchsia leads focus and borders; dark purple void provides depth and contrast.
+
+[bar]
+background       = "#26173E"
+background-alpha = 0.85
+text             = "#46FEEC"
+placeholder      = "#3D99CA"
+scale-with-font  = true
+border           = "#DA11C9"
+border-active    = "hyprland.active-border"
+
+border-alpha     = 0.88
+active-border-foreground = "rgb(DA11C9) rgb(FFFF4C) 45deg"
+
+[controls]
+normal-color        = "#3D99CA"
+normal-fill-alpha   = 0.05
+normal-border       = "#DA11C9"
+normal-border-width = 0
+normal-border-alpha = 0.0
+
+hover-cursor-color        = "#46FEEC"
+hover-cursor-fill-alpha   = 0.10
+hover-cursor-border       = "#28187D"
+hover-cursor-border-width = 0
+hover-cursor-border-alpha = 0.0
+hover-text                 = "#ED4BA8ff"
+
+focus-color        = "#DA11C9"
+focus-fill-alpha   = 0.13
+focus-border       = "hyprland.active-border-foreground"
+focus-border-width = 1
+focus-border-alpha = 0.72
+
+selected-color        = "#ED4BA8"
+selected-fill-alpha   = 0.35
+selected-border       = "#ED4BA8"
+selected-border-width = "0 0 1 0"
+selected-border-alpha = 0.82
+selected-text             = "#FFFF4C"
+
+pressed-fill-alpha   = 0.24
+selection-fill-alpha = 0.34
+
+[spacing]
+# Slightly plush, but still compact enough for a daily-driver shell.
+scale = 1.08
+scale-with-font = true
+control-gap       = 9
+control-padding-x = 12
+control-padding-y = 7
+input-padding-y   = 8
+control-height    = 31
+popup-row-height  = 32
+row-gap           = 9
+row-padding-x     = 14
+label-gap         = 5
+panel-gap         = 16
+panel-padding     = 20
+popup-padding     = 17
+
+[font]
+base-size     = 12
+caption       = 10
+body-small    = 11
+body          = 12
+subtitle      = 13
+title         = 15
+heading       = 18
+display       = 26
+display-large = 31
+icon-small    = 11
+icon          = 14
+icon-large    = 19
+
+[popups]
+background       = "#26173E"
+background-alpha = 0.96
+text             = "#46FEEC"
+border           = "hyprland.active-border"
+border-alpha     = 0.78
+border-width     = 2
+
+[tooltip]
+background       = "#26173E"
+background-alpha = 0.96
+text             = "#46FEEC"
+border           = "#DA11C9"
+border-alpha     = 0.68
+
+[notifications]
+background       = "#26173E"
+background-alpha = 0.96
+text             = "#46FEEC"
+border           = "hyprland.active-border"
+border-alpha     = 0.78
+border-width     = 2
+countdown        = "#ED4BA8"
+
+[launcher]
+background                = "#26173E"
+background-alpha          = 0.96
+text                      = "#46FEEC"
+border                    = "hyprland.active-border"
+border-alpha              = 0.78
+border-width              = 2
+scrim                     = "#26173E"
+scrim-alpha               = 0.45
+selected-background       = "#ED4BA8"
+selected-background-alpha = 0.18
+selected-text             = "#FFFF4C"
+selected-border           = "#ED4BA8"
+selected-border-alpha     = 0.75
+selected-border-width     = 1
+
+[menu]
+background                = "#26173E"
+background-alpha          = 0.96
+text                      = "#46FEEC"
+border                    = "hyprland.active-border"
+border-alpha              = 0.78
+border-width              = 2
+scrim                     = "#26173E"
+scrim-alpha               = 0.45
+selected-background       = "#ED4BA8"
+selected-background-alpha = 0.18
+selected-text             = "#FFFF4C"
+selected-border           = "#ED4BA8"
+selected-border-alpha     = 0.75
+selected-border-width     = 1
+
+[polkit]
+background       = "#26173E"
+background-alpha = 1.0
+text             = "#46FEEC"
+text-error       = "#FF003C"
+border           = "hyprland.active-border"
+border-error     = "#FF003C"
+border-alpha     = 0.88
+scrim            = "#26173E"
+scrim-alpha      = 0.66
+accent           = "#DA11C9"
+
+[lock]
+background       = "#26173E"
+background-alpha = 0.20
+text             = "#46FEEC"
+placeholder      = "#3D99CA"
+text-error       = "#FF003C"
+border           = "#DA11C9"
+border-active    = "hyprland.active-border"
+border-error     = "#FF003C"
+border-alpha     = 0.88
+selection        = "#ED4BA8"
+selection-alpha  = 0.40
+
+[image-picker]
+scrim                   = "#26173E"
+scrim-alpha             = 0.66
+text                    = "#46FEEC"
+selected-border         = "hyprland.active-border"
+selected-border-alpha   = 1.0
+unselected-border       = "#ED4BA8"
+unselected-border-alpha = 0.42
