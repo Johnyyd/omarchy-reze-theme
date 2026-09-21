@@ -1,5 +1,5 @@
 /*
- * Cyberpunk Edgerunners shared CSS color variables.
+ * Reze shared CSS color variables.
  * Generated from colors.toml — DO NOT EDIT DIRECTLY
  * Source of truth: colors.toml
 */
@@ -7,28 +7,28 @@
   /* ANSI palette */
   @define-color color0 #26173E;
   @define-color color1 #FF003C;
-  @define-color color2 #1BD7F8;
+  @define-color color2 #373739;
   @define-color color3 #EAE43E;
-  @define-color color4 #5A4ED6;
-  @define-color color5 #DA11C9;
-  @define-color color6 #02B3F1;
-  @define-color color7 #46FEEC;
-  @define-color color8 #3D99CA;
+  @define-color color4 #46416A;
+  @define-color color5 #F4DCCE;
+  @define-color color6 #f18902ff;
+  @define-color color7 #00e131ff;
+  @define-color color8 #554b67ff;
   @define-color color9 #FF003C;
-  @define-color color10 #1BD7F8;
-  @define-color color11 #FFFF00;
-  @define-color color12 #5A4ED6;
-  @define-color color13 #B03DCE;
-  @define-color color14 #1BD7F8;
-  @define-color color15 #46FEEC;
+  @define-color color10 #373739;
+  @define-color color11 #EAE43E;
+  @define-color color12 #46416A;
+  @define-color color13 #855E8D;
+  @define-color color14 #fe4646;
+  @define-color color15 #5468ff;
 
   /* Optional semantic aliases */
   @define-color background #26173E;
-  @define-color foreground #46FEEC;
-  @define-color accent #DA11C9;
-  @define-color selection_bg #ED4BA8;
-  @define-color selection_fg #FFFF4C;
-  @define-color cursor #FFFF4C;
-  @define-color green #1BD7F8;
+  @define-color foreground #EFECF4;
+  @define-color accent #46416A;
+  @define-color selection_bg #EFECF4;
+  @define-color selection_fg #94BA81;
+  @define-color cursor #94BA81;
+  @define-color green #94BA81;
   @define-color yellow #EAE43E;
   @define-color red #FF003C;

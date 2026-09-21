@@ -1,12 +1,12 @@
 @define-color background #26173E;
-@define-color foreground #46FEEC;
+@define-color foreground #EFECF4;
 @define-color border alpha(@accent, 0.5);
-@define-color accent #DA11C9;
-@define-color fire #DA11C9;
-@define-color yellow #FFFF4C;
+@define-color accent #855E8D;
+@define-color fire #f18902;
+@define-color yellow #EAE43E;
 @define-color red #FF003C;
 @define-color critical #FF003C;
-@define-color panel-tint rgba(218, 17, 201, 0.08);
+@define-color panel-tint rgba(70, 65, 106, 0.16);
 @define-color panel alpha(@background, 0.85);
 
 window#waybar {

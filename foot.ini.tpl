@@ -5,7 +5,7 @@ background={{ background }}
 selection-foreground={{ selection_foreground }}
 selection-background={{ selection_background }}
 
-cursor={{ background }} {{ bright_foreground }}
+cursor={{ background }} {{ cursor }}
 
 regular0={{ background }}
 regular1={{ red }}

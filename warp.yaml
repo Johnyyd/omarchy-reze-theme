@@ -1,26 +1,26 @@
-name: Cyberpunk Edgerunners
-accent: "#DA11C9"
-cursor: "#FFFF4C"
+name: Reze
+accent: "#46416A"
+cursor: "#94BA81"
 background: "#26173E"
-foreground: "#46FEEC"
+foreground: "#EFECF4"
 details: darker
 
 terminal_colors:
   normal:
     black:   "#26173E"
     red:     "#FF003C"
-    green:   "#DA11C9"
+    green:   "#94BA81"
     yellow:  "#EAE43E"
-    blue:    "#5A4ED6"
-    magenta: "#DA11C9"
-    cyan:    "#02B3F1"
-    white:   "#46FEEC"
+    blue:    "#46416A"
+    magenta: "#F4DCCE"
+    cyan:    "#f18902"
+    white:   "#EFECF4"
   bright:
-    black:   "#3D99CA"
+    black:   "#554B67"
     red:     "#FF003C"
-    green:   "#DA11C9"
-    yellow:  "#FFFF4C"
-    blue:    "#5A4ED6"
-    magenta: "#B03DCE"
-    cyan:    "#1BD7F8"
-    white:   "#46FEEC"
+    green:   "#94BA81"
+    yellow:  "#EAE43E"
+    blue:    "#5468FF"
+    magenta: "#855E8D"
+    cyan:    "#fe4646"
+    white:   "#EFECF4"

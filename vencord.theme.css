@@ -1,48 +1,48 @@
 /**
-* @name Cyberpunk Edgerunners Discord
+* @name Reze Discord
 * @author @OldJobobo
 * @version 0.4.0
-* @description Standalone Cyberpunk Edgerunners theme for Vencord/Discord
+* @description Standalone Reze theme for Vencord/Discord
 **/
 
 :root {
   --color00: #26173E;
-  --color01: #ED4BA8;
-  --color02: #DA11C9;
+  --color01: #FF003C;
+  --color02: #855E8D;
   --color03: #EAE43E;
-  --color04: #5A4ED6;
-  --color05: #DA11C9;
-  --color06: #02B3F1;
-  --color07: #46FEEC;
-  --color08: #3D99CA;
-  --color09: #ED4BA8;
-  --color10: #DA11C9;
-  --color11: #FFFF4C;
-  --color12: #5A4ED6;
-  --color13: #B03DCE;
-  --color14: #1BD7F8;
-  --color15: #46FEEC;
+  --color04: #46416A;
+  --color05: #855E8D;
+  --color06: #F4DCCE;
+  --color07: #EFECF4;
+  --color08: #554B67;
+  --color09: #FF003C;
+  --color10: #855E8D;
+  --color11: #EAE43E;
+  --color12: #46416A;
+  --color13: #855E8D;
+  --color14: #94BA81;
+  --color15: #EFECF4;
 }
 
   --sm-void: #26173E;
   --sm-bg: #26173E;
-  --sm-panel: #28187D;
-  --sm-panel-hi: #28187D;
-  --sm-panel-top: #28187D;
-  --sm-text: #46FEEC;
-  --sm-text-soft: #02B3F1;
-  --sm-muted: #3D99CA;
-  --sm-text-pink: #ED4BA8;
-  --sm-name-pink: #FFFF4C;
-  --sm-pink: #ED4BA8;
-  --sm-pink-bright: #FFFF4C;
+  --sm-panel: #3E3633;
+  --sm-panel-hi: #3E3633;
+  --sm-panel-top: #3E3633;
+  --sm-text: #EFECF4;
+  --sm-text-soft: #F4DCCE;
+  --sm-muted: #554B67;
+  --sm-text-pink: #FF003C;
+  --sm-name-pink: #EAE43E;
+  --sm-pink: #FF003C;
+  --sm-pink-bright: #EAE43E;
   --sm-pink-frost: color-mix(in srgb, var(--color01) 18%, transparent);
   --sm-pink-line: color-mix(in srgb, var(--color01) 38%, transparent);
-  --sm-green: #DA11C9;
-  --sm-green-bright: #DA11C9;
+  --sm-green: #855E8D;
+  --sm-green-bright: #855E8D;
   --sm-green-frost: color-mix(in srgb, var(--color02) 12%, transparent);
   --sm-green-line: color-mix(in srgb, var(--color06) 30%, transparent);
-  --sm-cream: #FFFF4C;
+  --sm-cream: #EAE43E;
   --sm-shell: color-mix(in srgb, var(--sm-bg) 82%, transparent);
   --sm-shell-strong: color-mix(in srgb, var(--sm-bg) 92%, black);
   --sm-stroke: color-mix(in srgb, var(--color15) 7%, transparent);

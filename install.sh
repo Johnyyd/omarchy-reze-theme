@@ -2,11 +2,11 @@
 set -Eeuo pipefail
 
 repo_dir=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)
-theme_name=cyberpunk-edgerunners
+theme_name=reze
 theme_dir="$HOME/.config/omarchy/themes/$theme_name"
 template_dir="$HOME/.config/omarchy/themed"
 template_path="$template_dir/kitty.conf.tpl"
-state_dir="$HOME/.local/state/omarchy-cyberpunk-edgerunners-theme"
+state_dir="$HOME/.local/state/omarchy-reze-theme"
 backup_dir="$state_dir/backups/$(date +%Y%m%d-%H%M%S)-$$"
 current_theme_file="$HOME/.local/state/omarchy/current/theme.name"
 current_background_link="$HOME/.local/state/omarchy/current/background"
@@ -77,9 +77,16 @@ printf '%s\n' "$backup_dir" > "$state_dir/latest-backup"
 
 omarchy theme set "$theme_name"
 
-# Apply Cyberpunk Edgerunners Hyprland configuration (with transparent window rules)
+# Apply Reze Hyprland configuration
 cp -- "$repo_dir/hyprland.lua" "$runtime_theme_dir/hyprland.lua"
 omarchy-restart-hyprctl 2>/dev/null || true
+
+# Clean up any leftover color customizations in VS Code settings that would override the theme
+for settings_path in "${vscode_settings[@]}"; do
+  if [[ -f "$settings_path" ]] && command -v jq >/dev/null 2>&1; then
+    jq 'del(.["workbench.colorCustomizations"], .["editor.tokenColorCustomizations"], .["editor.semanticTokenColorCustomizations"])' "$settings_path" > "$settings_path.tmp" && mv "$settings_path.tmp" "$settings_path"
+  fi
+done
 
 # Sync VS Code theme extension and settings with the new theme colors
 cp -- "$repo_dir/vscode-theme.json" "$runtime_theme_dir/vscode-theme.json"
@@ -96,12 +103,12 @@ omarchy-restart-terminal 2>/dev/null || true
 # Sync cliamp theme configuration
 if command -v cliamp >/dev/null 2>&1 || [[ -d "$HOME/.config/cliamp" ]]; then
   mkdir -p "$HOME/.config/cliamp/themes"
-  cp -- "$repo_dir/cliamp.toml" "$HOME/.config/cliamp/themes/cyberpunk-edgerunners.toml"
-  if [[ ! -f "$HOME/.config/cliamp/config.toml" ]] || ! grep -q "cyberpunk-edgerunners" "$HOME/.config/cliamp/config.toml" 2>/dev/null; then
-    printf 'theme = "cyberpunk-edgerunners"\n' > "$HOME/.config/cliamp/config.toml"
+  cp -- "$repo_dir/cliamp.toml" "$HOME/.config/cliamp/themes/reze.toml"
+  if [[ ! -f "$HOME/.config/cliamp/config.toml" ]] || ! grep -q "reze" "$HOME/.config/cliamp/config.toml" 2>/dev/null; then
+    printf 'theme = "reze"\n' > "$HOME/.config/cliamp/config.toml"
   fi
-  cliamp theme cyberpunk-edgerunners 2>/dev/null || true
+  cliamp theme reze 2>/dev/null || true
 fi
 
-echo "Cyberpunk Edgerunners theme installed and applied."
+echo "Reze theme installed and applied."
 echo "Backup: $backup_dir"

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build script for Cyberpunk Edgerunners theme
+# Build script for Reze theme (Chainsaw Man - Reze Arc)
 # Syncs colors.toml (source of truth) to all derived configuration files
 
 set -Eeuo pipefail
@@ -19,7 +19,7 @@ get_color() {
     echo "$value"
 }
 
-echo "🔧 Building Cyberpunk Edgerunners theme from $COLORS_TOML"
+echo "🔧 Building Reze theme from $COLORS_TOML"
 
 # Extract key colors
 BG="$(get_color 'background')"
@@ -63,7 +63,7 @@ echo "✅ Extracted palette from colors.toml"
 # 1. Generate colors.css
 cat > "$REPO_DIR/colors.css" <<EOF
 /*
- * Cyberpunk Edgerunners shared CSS color variables.
+ * Reze shared CSS color variables.
  * Generated from colors.toml — DO NOT EDIT DIRECTLY
  * Source of truth: colors.toml
 */
@@ -204,16 +204,25 @@ sed -i \
 
 echo "✅ Updated helix.toml"
 
-# 5. Generate obsidian.css (selection only)
+# 5. Generate obsidian.css
 sed -i \
+    -e "s/--background-primary: #[A-Fa-f0-9]*;/--background-primary: $BG;/" \
+    -e "s/--text-normal: #[A-Fa-f0-9]*;/--text-normal: $FG;/" \
     -e "s/--text-selection: #[A-Fa-f0-9]*;/--text-selection: $SEL_BG;/" \
+    -e "s/--text-link: #[A-Fa-f0-9]*;/--text-link: $GREEN;/" \
+    -e "s/--text-accent: #[A-Fa-f0-9]*;/--text-accent: $GREEN;/" \
+    -e "s/--interactive-accent: #[A-Fa-f0-9]*;/--interactive-accent: $GREEN;/" \
     "$REPO_DIR/obsidian.css"
 
 echo "✅ Updated obsidian.css"
 
-# 6. Generate hyprland-preview-share-picker.css (selected_tab only)
+# 6. Generate hyprland-preview-share-picker.css
 sed -i \
+    -e "s/@define-color foreground #[A-Fa-f0-9]*;/@define-color foreground $FG;/" \
+    -e "s/@define-color background #[A-Fa-f0-9]*;/@define-color background $BG;/" \
+    -e "s/@define-color accent #[A-Fa-f0-9]*;/@define-color accent $GREEN;/" \
     -e "s/@define-color selected_tab #[A-Fa-f0-9]*;/@define-color selected_tab $SEL_BG;/" \
+    -e "s/@define-color text #[A-Fa-f0-9]*;/@define-color text $FG;/" \
     "$REPO_DIR/hyprland-preview-share-picker.css"
 
 echo "✅ Updated hyprland-preview-share-picker.css"
@@ -310,8 +319,8 @@ done
 if [ $FAILED -eq 0 ]; then
     echo ""
     echo "🎉 Build successful! All files synced to colors.toml palette."
-    echo "   Selection color: $SEL_BG (Lucy Hot Pink)"
-    echo "   Accent color: $ACCENT (Lucy Hot Pink)"
+    echo "   Selection color: $SEL_BG (Reze Lavender White)"
+    echo "   Accent color: $ACCENT (Reze Slate Violet Hair)"
 else
     echo ""
     echo "⚠️  Some files may need manual review"

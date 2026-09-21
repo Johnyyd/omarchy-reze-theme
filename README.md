@@ -1,10 +1,10 @@
-# Omarchy Cyberpunk Edgerunners Theme
+# Omarchy Reze Theme
 
-Cyberpunk Edgerunners is a dark futuristic Omarchy theme inspired by Studio Trigger and CD Projekt Red's *Cyberpunk: Edgerunners*, featuring iconic Cyberpunk neon yellow, luminous cyan, and vivid fuchsia/hot pink accents against a deep Night City dark purple void (`#26173E`). Rounded glass surfaces with glowing chromatic cyberware borders and luminous UI treatments capture the electric atmosphere of Night City.
+Reze is a dark atmospheric Omarchy theme inspired by Tatsuki Fujimoto's *Chainsaw Man* (*Reze Arc*), featuring iconic Reze slate violet hair, crisp lavender-white, sage green, and vivid bomb crimson/spark yellow accents against a deep dark purple void (`#26173E`). Rounded glass surfaces with glowing chromatic borders and luminous UI treatments capture the delicate yet explosive atmosphere of the Bomb Devil.
 
 ## Preview
 
-![Cyberpunk Edgerunners preview](preview.png)
+![Reze preview](preview.png)
 
 ## Install
 
@@ -15,10 +15,10 @@ For a complete install with automatic backups, VS Code theme extension synchroni
 ./install.sh
 ```
 
-- Installs Cyberpunk Edgerunners as an Omarchy theme matching official template specifications.
+- Installs Reze as an Omarchy theme matching official template specifications.
 - Configures Kitty, Alacritty, Ghostty, Foot, and Warp with clean transparent backgrounds (`background_opacity 0.80`).
-- Configures Hyprland with chromatic border gradients (`#DA11C9` -> `#FFFF4C` -> `#1BD7F8`) and transparency rules for VS Code, Cursor, and VSCodium.
-- Automatically generates and synchronizes the rich Cyberpunk Edgerunners color theme extension for VS Code / Cursor.
+- Configures Hyprland with chromatic border gradients (`#46416A` -> `#855E8D` -> `#94BA81`) and transparency rules for VS Code, Cursor, and VSCodium.
+- Automatically generates and synchronizes the rich Reze color theme extension for VS Code / Cursor.
 - Creates automatic backups of previous theme, wallpaper, and editor settings.
 
 Restore previous configuration at any time with:
@@ -31,7 +31,7 @@ Restore previous configuration at any time with:
 To install directly from the remote git repository:
 
 ```bash
-omarchy-theme-install https://github.com/Johnyyd/omarchy-cyberpunk-edgerunners-theme
+omarchy-theme-install https://github.com/tringuyen/omarchy-reze-theme
 ```
 
 ## What's Included
@@ -40,21 +40,21 @@ omarchy-theme-install https://github.com/Johnyyd/omarchy-cyberpunk-edgerunners-t
 - **Terminals**: Clean transparent background configurations (`0.80` opacity, blur disabled) for Kitty, Alacritty, Ghostty, Foot, and Warp.
 - **TUIs & Monitors**: Native transparent terminal backgrounds for `btop` (`main_bg=""`), `helix` (`ui.background={}`), and `neovim`. Custom meter gradients and audio waveforms in `btop` and `cava`.
 - **VS Code / Cursor / VSCodium**: Full multi-color syntax highlighting (`vscode-theme.json`) covering TextMate scopes and semantic tokens:
-  - **Keywords & Control Flow**: `#ED4BA8` (Lucy Hot Pink)
-  - **Functions & Methods**: `#FFFF4C` (Cyberpunk Neon Yellow)
-  - **Types & Interfaces**: `#B03DCE` (Neon Orchid)
-  - **Strings & Secondary Accents**: `#DA11C9` (Vivid Neon Fuchsia)
-  - **Variables & Parameters**: `#1BD7F8` (Vivid Electric Cyan)
-  - **Numbers & Constants**: `#EAE43E` (Acid Lime Yellow)
-  - **Comments & Documentation**: `#3D99CA` (Steel Blue)
+  - **Keywords & Control Flow**: `#FF003C` (Bomb Devil Crimson)
+  - **Functions & Methods**: `#EAE43E` (Detonation Spark Yellow)
+  - **Types & Interfaces**: `#855E8D` (Lilac Mist)
+  - **Strings & Secondary Accents**: `#F4DCCE` (Peach Cream)
+  - **Variables & Parameters**: `#94BA81` (Sage Green Eyes)
+  - **Numbers & Constants**: `#F18902` (Fuse Amber)
+  - **Comments & Documentation**: `#554B67` (Elevated Purple Slate)
 - **Editors & TUIs**: Native configurations for Neovim (`aether.nvim` v3 with LazyVim), Helix, Zed, Pi, and Claude CLI.
-- **Fastfetch**: Custom Cyberpunk Edgerunners logo with neon fuchsia, yellow, and electric cyan color accents (`fastfetch.jsonc`).
+- **Fastfetch**: Custom Reze logo with slate violet, lilac, and spark yellow color accents (`fastfetch.jsonc`).
 - **Desktop Integrations**: Styled layouts for Waybar, Mako, Walker, SwayOSD, and Hyprlock.
 - **Vencord Theme**: Standalone [Vencord theme](vencord.theme.css) with custom layered treatment for Discord.
 
 ### Fastfetch Theme Setup
 
-Apply the Cyberpunk Edgerunners logo and color scheme to Fastfetch:
+Apply the Reze logo and color scheme to Fastfetch:
 
 ```bash
 ./install-fastfetch-logo.sh
@@ -72,30 +72,30 @@ To restore your previous Fastfetch configuration or system default:
 
 <table>
   <tr>
-    <td><img src="backgrounds/01-david-and-lucy.jpg" width="220" alt="David and Lucy"></td>
-    <td><img src="backgrounds/02-david-and-lucy.jpg" width="220" alt="David and Lucy"></td>
-    <td><img src="backgrounds/03-david-and-lucy.jpg" width="220" alt="David and Lucy"></td>
+    <td><img src="backgrounds/01-reze.jpg" width="220" alt="Reze 01"></td>
+    <td><img src="backgrounds/02-reze.jpg" width="220" alt="Reze 02"></td>
+    <td><img src="backgrounds/03-reze.jpg" width="220" alt="Reze 03"></td>
   </tr>
   <tr>
-    <td><img src="backgrounds/04-lucy.jpg" width="220" alt="Lucy"></td>
-    <td><img src="backgrounds/05-lucy.jpg" width="220" alt="Lucy"></td>
-    <td><img src="backgrounds/06-cyberpunk-edgerunners.jpg" width="220" alt="Cyberpunk Edgerunners"></td>
+    <td><img src="backgrounds/04-reze.jpg" width="220" alt="Reze 04"></td>
+    <td><img src="backgrounds/05-reze.jpg" width="220" alt="Reze 05"></td>
+    <td><img src="backgrounds/06-reze.jpg" width="220" alt="Reze 06"></td>
   </tr>
   <tr>
-    <td><img src="backgrounds/07-night-city.jpg" width="220" alt="Night City"></td>
-    <td><img src="backgrounds/08-david.jpg" width="220" alt="David Martinez"></td>
-    <td><img src="backgrounds/09-edgerunners.jpg" width="220" alt="Edgerunners"></td>
+    <td><img src="backgrounds/07-reze.jpg" width="220" alt="Reze 07"></td>
+    <td><img src="backgrounds/08-reze.jpg" width="220" alt="Reze 08"></td>
+    <td><img src="backgrounds/09-reze.jpg" width="220" alt="Reze 09"></td>
   </tr>
 </table>
 
 ### Live Wallpapers (.mp4)
 
-The theme includes 4 animated video wallpapers located in `backgrounds/`:
+The theme supports animated video wallpapers located in `backgrounds/`:
 
-- `david-x-lucy-neon-afterglow-cyberpunk-edgerunners-moewalls-com.mp4` (David & Lucy Neon Afterglow)
-- `lucy-and-david-sitting-on-the-moon-cyberpunk-edgerunners-moewalls-com.mp4` (David & Lucy on the Moon)
-- `lucyna-astronaut-cyberpunk-edgerunners-moewalls-com.mp4` (Lucyna Astronaut)
-- `lucy-x-rebecca-wuthering-waves-x-cyberpunk-edgerunners-moewalls-com.mp4` (Lucy & Rebecca)
+- `reze-cafe-ambient.mp4` (Reze Cafe Ambient)
+- `reze-bomb-devil-transformation.mp4` (Bomb Devil Transformation)
+- `reze-night-sky.mp4` (Reze Night Sky)
+- `reze-fireworks-festival.mp4` (Fireworks Festival)
 
 These looping video wallpapers are directly compatible with the [Omarchy Live Wallpaper plugin](https://github.com/yesheytenzin/live-wallpaper). Once the plugin is installed:
 1. Open **Style → Background** (or double-click an empty area on your desktop).
@@ -105,4 +105,3 @@ These looping video wallpapers are directly compatible with the [Omarchy Live Wa
 
 - Omarchy 4.0 (Quattro) for native shell and Hyprland Lua treatment
 - `Yaru-magenta` icon theme
-

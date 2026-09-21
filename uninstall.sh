@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-theme_name=cyberpunk-edgerunners
+theme_name=reze
 theme_dir="$HOME/.config/omarchy/themes/$theme_name"
 template_path="$HOME/.config/omarchy/themed/kitty.conf.tpl"
-state_dir="$HOME/.local/state/omarchy-cyberpunk-edgerunners-theme"
+state_dir="$HOME/.local/state/omarchy-reze-theme"
 latest_file="$state_dir/latest-backup"
 current_theme_file="$HOME/.local/state/omarchy/current/theme.name"
 runtime_theme_dir="$HOME/.local/state/omarchy/current/theme"
@@ -18,11 +18,11 @@ vscode_settings=(
 command -v omarchy >/dev/null || { echo "omarchy is required" >&2; exit 1; }
 
 if [[ ${1:-} != "--yes" ]]; then
-  read -r -p "Restore the configuration saved before Cyberpunk Edgerunners install? [y/N] " answer
+  read -r -p "Restore the configuration saved before Reze install? [y/N] " answer
   [[ $answer == [yY] ]] || { echo "Cancelled."; exit 0; }
 fi
 
-[[ -s $latest_file ]] || { echo "No Cyberpunk Edgerunners installation backup found." >&2; exit 1; }
+[[ -s $latest_file ]] || { echo "No Reze installation backup found." >&2; exit 1; }
 backup_dir=$(<"$latest_file")
 [[ -d $backup_dir ]] || { echo "Backup is missing: $backup_dir" >&2; exit 1; }
 
@@ -71,4 +71,4 @@ if [[ -f $previous_background ]]; then
 fi
 
 rm -f -- "$latest_file"
-echo "Cyberpunk Edgerunners theme removed and the previous configuration restored."
+echo "Reze theme removed and the previous configuration restored."

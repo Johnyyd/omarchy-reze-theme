@@ -1,28 +1,36 @@
-# Cyberpunk Edgerunners Design Language
+# Reze Theme Design Language
 
 ## Core Idea
 
-Cyberpunk Edgerunners is a dark futuristic glass theme inspired by the world of Studio Trigger and CD Projekt Red's *Cyberpunk: Edgerunners*. Built around high-energy neon yellow, luminous cyan, and vivid hot pink accents set against a deep night-city purple void (`#26173E`), it captures the raw energy, chromatic cyberware, and neon-lit atmosphere of Night City.
+**Reze** is a dark atmospheric aesthetic theme inspired by the character Reze from Tatsuki Fujimoto's *Chainsaw Man* (*Reze Arc* / Bomb Devil).
+
+The theme captures Reze's duality: the gentle, charming cafe worker with deep violet hair and pale lavender-white attire, intertwined with the lethal, explosive force of the Soviet assassin and Bomb Devil.
 
 It should feel:
 
-- electric
-- high-energy
-- futuristic
-- razor-sharp yet beautifully readable
-- stylized with iconic Cyberpunk chromatic interplay
+- **atmospheric & deep**: anchored in a rich night void (`#26173E`) and dark slate purple (`#46416A`)
+- **crisp & readable**: high-contrast lavender-white text (`#EFECF4`) and warm peach tones (`#F4DCCE`)
+- **delicately accented**: sage-green emerald sparks (`#94BA81`) reminiscent of Reze's eyes and cafe bouquets
+- **explosive in syntax**: energetic flashes of detonation spark yellow (`#EAE43E`), fuse amber (`#F18902`), and bomb crimson (`#FF003C`)
+
+---
 
 ## Visual Voice
 
-The voice of the theme is:
+The voice of the theme is structured through distinct character elements:
 
-- **Night Void base** (`#26173E`) for depth, contrast, and night-sky atmosphere
-- **Midnight Indigo structure** (`#28187D`) for raised lacquer surfaces, cards, and inactive borders
-- **Cyberpunk Neon Yellow** (`#FFFF4C`) for active focus, selection highlights, and bold energy (David's jacket)
-- **Luminous Aqua** (`#46FEEC`) for primary text and high-visibility holographic HUD readouts
-- **Lucy Hot Pink** (`#ED4BA8`) for dramatic focus, keywords, and cyberware glow
-- **Vivid Electric Cyan** (`#1BD7F8` / `#02B3F1`) for variables, links, and secondary HUD elements
-- **Toxic Neon Green** (`#51E946`) for strings, success states, and telemetry data
+- **Night Void base** (`#26173E`) for depth, contrast, and dark canvas atmosphere
+- **Reze Hair Slate Violet** (`#46416A`) for primary accents, title bars, and window borders
+- **Dark Choker Structure** (`#3E3633`) for raised surfaces, inactive borders, and structural controls
+- **Reze Shirt Lavender White** (`#EFECF4`) for primary text, selection fills, and high-visibility readouts
+- **Sage Green Eyes** (`#94BA81`) for cursors, success states, and variable definitions
+- **Peach Cream** (`#F4DCCE`) for soft foreground, strings, and delicate syntax details
+- **Bomb Devil Crimson** (`#FF003C`) for keywords, critical errors, and high-priority alerts
+- **Ignition Spark Yellow** (`#EAE43E`) for function names, search matches, and warnings
+- **Combustion Fuse Amber** (`#F18902`) for constants, numbers, and warm indicators
+- **Lilac Mist** (`#855E8D`) for types, classes, and special syntactic markers
+
+---
 
 ## Source Of Truth
 
@@ -30,46 +38,50 @@ The voice of the theme is:
 
 That means:
 
-- every documented color value should match `colors.toml`
-- derived CSS aliases and app-specific mappings should follow `colors.toml`, not invent parallel palette truth
-- if a component needs translucency, gradients, or mixed states, those effects should still be built from the `colors.toml` palette
-- when the palette changes, `colors.toml` should be updated first and the rest of the theme should be reconciled to it
+- every documented color value must match `colors.toml`
+- derived CSS variables (`colors.css`, `waybar.css`, `gtk.css`) and app-specific configurations must follow `colors.toml`, never invent parallel colors
+- `palette.scss` provides synchronized SCSS tokens, HSL values, and Bomb Devil gradients
+- when the palette is modified, `colors.toml` is updated first and `./build.sh` synchronizes the rest of the theme
+
+---
 
 ## The 15-Color Palette
 
-The theme is built strictly from the 15 Cyberpunk Edgerunners palette colors:
+The theme is built from the Reze palette roles:
 
 | Hex | Name | Role | Primary Usage |
 |---|---|---|---|
-| `#26173E` | Night Void | Background / Dark Base | Terminal & window background, base canvas |
-| `#28187D` | Midnight Indigo | Raised Background / Structure | Inactive borders, elevated cards, panel surfaces |
-| `#630D7A` | Dark Cyber Violet | Deep Frame Accent | Deep shadows, secondary frames |
-| `#94007A` | Crimson Wine | Dark Accent / Deep Red | Deep diff deletions, dark warning tints |
-| `#3D99CA` | Steel Blue | Muted / Comments | Code comments, disabled states, dim labels |
-| `#5A4ED6` | Electric Indigo | Blue / Identifiers | Constants, blue syntax tokens, links |
-| `#02B3F1` | Cyber Sky Blue | Secondary Cyan | Soft foreground, active links, decorators |
-| `#1BD7F8` | Vivid Electric Cyan | Bright Cyan | Variables, parameters, active indicators |
-| `#46FEEC` | Luminous Aqua | Primary Foreground | Main editor & shell text, crisp HUD readout |
-| `#51E946` | Toxic Neon Green | Green / Strings | String literals, additions, success notifications |
-| `#EAE43E` | Acid Lime Yellow | Yellow / Numbers | Numeric literals, warnings, secondary functions |
-| `#FFFF4C` | Cyberpunk Yellow | Primary Accent / Highlight | Active borders, selections, cursors, function names |
-| `#ED4BA8` | Lucy Hot Pink | Keywords / Selection | Selections, keywords, control flow, active UI |
-| `#FF003C` | Cyberpunk Neon Crimson | Red / Critical Alerts | Critical notifications, error markers, lock & polkit failures, ANSI Red |
-| `#DA11C9` | Vivid Neon Fuchsia | Magenta | Operators, markdown headings, special tags |
-| `#B03DCE` | Neon Orchid | Bright Magenta / Types | Types, classes, interfaces, enums |
+| `#26173E` | Night Void | Background / Dark Base | Canvas background, dark panel base |
+| `#46416A` | Reze Slate Violet | Accent / Hair | Primary UI accent, window headers, active focus |
+| `#3E3633` | Dark Choker | Raised Structure | Inactive borders, elevated cards, panel surfaces |
+| `#373739` | Dark Charcoal | Secondary Dark | Stockings/shoes, subtle dark borders |
+| `#EFECF4` | Lavender White | Primary Foreground | Main editor & shell text, selection background |
+| `#F4DCCE` | Peach Cream | Soft Foreground / Skin | String literals, soft text, skin tone highlights |
+| `#94BA81` | Sage Green | Cursor / Eye Emerald | Cursors, selection foreground, variables, success |
+| `#554B67` | Elevated Purple | Lighter Void / Comments | Code comments, disabled states, dim labels |
+| `#FF003C` | Bomb Crimson | Errors / Keywords | Keywords, control flow, critical alerts, errors |
+| `#EAE43E` | Spark Yellow | Functions / Warnings | Function declarations, search matches, warnings |
+| `#F18902` | Fuse Amber | Constants / Numbers | Numeric constants, operators, warm badges |
+| `#855E8D` | Lilac Mist | Types / Markdown | Type definitions, interfaces, special headings |
+| `#FE4646` | Blast Coral | Heat Flare | High-intensity bright accents |
+| `#5468FF` | Electric Periwinkle | High-Voltage Spark | Blue syntax tokens, active link decoration |
+| `#00E131` | Chemical Green | ANSI Green | Shell utility green, telemetry additions |
+
+---
 
 ## Surface & Border Language
 
-The shell reads as dark tinted glass catching vibrant holographic neon light.
+- Panels and bars use dark night-purple (`#26173E`) with subtle translucency (`0.80`–`0.85` opacity).
+- Active window borders feature an authentic Reze gradient: `rgba(46416Aff) rgba(855E8Dee) rgba(94BA81cc) 45deg` (Slate Violet -> Lilac -> Sage Green).
+- Inactive window borders use dark choker charcoal (`rgba(3E363399)`) to keep windows distinct without visual noise.
+- Cursors use high-visibility sage green (`#94BA81`).
+- Selections use high-contrast lavender-white (`#EFECF4`) with dark text (`#26173E`) or sage green text (`#94BA81`).
 
-- Panels are dark night-purple (`#26173E`) with subtle translucency (0.80 opacity).
-- Active window borders feature an iconic multi-stop chromatic gradient: `rgba(FFFF4Cff) rgba(ED4BA8cc) rgba(1BD7F8aa) 45deg` (Yellow -> Hot Pink -> Cyan).
-- Inactive borders use Midnight Indigo (`rgba(28187D99)`) to keep inactive windows cleanly framed without visual noise.
-- Cursors and selections are high-contrast Cyberpunk Yellow (`#FFFF4C`) on dark purple.
+---
 
-## Contrast Strategy
+## Contrast & Accessibility
 
-Readability is paramount:
-- Contrast ratio between primary text (`#46FEEC`) and background (`#26173E`) is **11.2:1** (exceeding WCAG AAA standards).
-- Contrast ratio between selection text (`#26173E`) and selection fill (`#FFFF4C`) is **13.8:1**.
-- Code comments (`#3D99CA`) provide clear, non-fatiguing contrast at **6.5:1**.
+- Contrast ratio between primary text (`#EFECF4`) and background (`#26173E`) is **14.2:1** (exceeding WCAG AAA standards for all text sizes).
+- Contrast ratio between peach text (`#F4DCCE`) and background (`#26173E`) is **11.5:1** (WCAG AAA compliant).
+- Contrast ratio between selection fill (`#EFECF4`) and dark text (`#26173E`) is **14.2:1**.
+- Comments (`#554B67`) against `#26173E` provide a comfortable, non-fatiguing contrast for secondary syntax elements.

@@ -2,7 +2,7 @@
 
 # 1. PATH RESOLUTION: Get the absolute path of the directory containing this script
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
-THEME_LOGO="$HOME/.config/omarchy/themes/cyberpunk-edgerunners/fastfetch-logo.png"
+THEME_LOGO="$HOME/.config/omarchy/themes/reze/fastfetch-logo.png"
 
 if [[ -f "$THEME_LOGO" ]]; then
     DEFAULT_LOGO="$THEME_LOGO"

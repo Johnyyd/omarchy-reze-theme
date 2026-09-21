@@ -1,32 +1,32 @@
 /**
- * Cyberpunk Edgerunners GTK4/Adwaita Styling
- * Dark void theme with cyber cyan and neon yellow palette
+ * Reze GTK4/Adwaita Styling (Chainsaw Man - Reze Arc)
+ * Dark void theme with slate violet, lavender white, and Bomb Devil accents
  */
 
 /* Dynamic color palette from Aether */
 @define-color background #26173E;
-@define-color foreground #46FEEC;
+@define-color foreground #EFECF4;
 
 @define-color black #26173E;
 @define-color red #FF003C;
-@define-color green #DA11C9;
-@define-color yellow #FFFF4C;
-@define-color blue #5A4ED6;
-@define-color magenta #DA11C9;
-@define-color cyan #02B3F1;
-@define-color white #46FEEC;
-@define-color bright_black #3D99CA;
+@define-color green #94BA81;
+@define-color yellow #EAE43E;
+@define-color blue #46416A;
+@define-color magenta #855E8D;
+@define-color cyan #94BA81;
+@define-color white #EFECF4;
+@define-color bright_black #554B67;
 @define-color bright_red #FF003C;
-@define-color bright_green #DA11C9;
-@define-color bright_yellow #FFFF4C;
-@define-color bright_blue #5A4ED6;
-@define-color bright_magenta #B03DCE;
-@define-color bright_cyan #1BD7F8;
-@define-color bright_white #46FEEC;
+@define-color bright_green #94BA81;
+@define-color bright_yellow #EAE43E;
+@define-color bright_blue #5468FF;
+@define-color bright_magenta #855E8D;
+@define-color bright_cyan #FE4646;
+@define-color bright_white #EFECF4;
 
 /* Adwaita Color Overrides */
 @define-color accent_bg_color @magenta;
-@define-color accent_fg_color @background;
+@define-color accent_fg_color @foreground;
 @define-color accent_color @magenta;
 
 @define-color window_bg_color @background;
@@ -73,7 +73,7 @@
 @define-color theme_bg_color @background;
 @define-color theme_base_color @black;
 @define-color theme_selected_bg_color @magenta;
-@define-color theme_selected_fg_color @background;
+@define-color theme_selected_fg_color @foreground;
 @define-color insensitive_bg_color @background;
 @define-color insensitive_fg_color alpha(@foreground, 0.5);
 @define-color insensitive_base_color @black;
@@ -82,7 +82,7 @@
 @define-color theme_unfocused_bg_color @background;
 @define-color theme_unfocused_base_color @black;
 @define-color theme_unfocused_selected_bg_color @magenta;
-@define-color theme_unfocused_selected_fg_color @background;
+@define-color theme_unfocused_selected_fg_color @foreground;
 @define-color unfocused_insensitive_color alpha(@foreground, 0.5);
 @define-color unfocused_borders alpha(@foreground, 0.12);
 @define-color warning_color @yellow;
@@ -95,25 +95,21 @@
 @define-color text_view_bg @black;
 
 /* GtkMessageDialog styling */
-/* Target the entire dialog's background */
 messagedialog {
     background-color: @dialog_bg_color;
 }
 
-/* Target the main message label inside the dialog */
 messagedialog label {
     color: @dialog_fg_color;
     font-size: 14pt;
     font-weight: bold;
 }
 
-/* Target the secondary, more detailed text (if any) */
 messagedialog .secondary-text {
     font-size: 10pt;
     font-style: italic;
 }
 
-/* Target the buttons in the dialog's action area */
 messagedialog button {
     background-color: @black;
     color: @foreground;
@@ -131,7 +127,6 @@ banner revealer widget {
     color: @foreground;
 }
 
-/* GtkAlertDialog styling */
 alertdialog.background {
     background-color: @dialog_bg_color;
     color: @dialog_fg_color;

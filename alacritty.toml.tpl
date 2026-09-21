@@ -7,11 +7,11 @@ foreground = "{{ foreground }}"
 
 [colors.cursor]
 text = "{{ background }}"
-cursor = "{{ bright_foreground }}"
+cursor = "{{ cursor }}"
 
 [colors.vi_mode_cursor]
 text = "{{ background }}"
-cursor = "{{ bright_foreground }}"
+cursor = "{{ cursor }}"
 
 [colors.search.matches]
 foreground = "{{ background }}"

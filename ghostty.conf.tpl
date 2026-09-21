@@ -2,7 +2,7 @@ background = {{ background }}
 foreground = {{ foreground }}
 background-opacity = 0.80
 background-blur = false
-cursor-color = {{ bright_foreground }}
+cursor-color = {{ cursor }}
 selection-background = {{ selection_background }}
 selection-foreground = {{ selection_foreground }}
 

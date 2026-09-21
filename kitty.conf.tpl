@@ -4,7 +4,7 @@ background_opacity    0.80
 
 selection_foreground  {{ selection_foreground }}
 selection_background {{ selection_background }}
-cursor                {{ bright_foreground }}
+cursor                {{ cursor }}
 cursor_text_color     {{ background }}
 
 active_border_color   {{ accent }}
