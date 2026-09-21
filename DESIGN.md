@@ -72,7 +72,7 @@ The theme is built from the Reze palette roles:
 ## Surface & Border Language
 
 - Panels and bars use dark night-purple (`#26173E`) with subtle translucency (`0.80`–`0.85` opacity).
-- Active window borders feature an authentic Reze gradient: `rgba(46416Aff) rgba(855E8Dee) rgba(94BA81cc) 45deg` (Slate Violet -> Lilac -> Sage Green).
+- Active window borders feature an authentic Reze gradient: `rgba(46416A) rgba(855E8Dee) rgba(94BA81cc) 45deg` (Slate Violet -> Lilac -> Sage Green).
 - Inactive window borders use dark choker charcoal (`rgba(3E363399)`) to keep windows distinct without visual noise.
 - Cursors use high-visibility sage green (`#94BA81`).
 - Selections use high-contrast lavender-white (`#EFECF4`) with dark text (`#26173E`) or sage green text (`#94BA81`).
