@@ -25,9 +25,9 @@
   /* Optional semantic aliases */
   @define-color background #26173E;
   @define-color foreground #EFECF4;
-  @define-color accent #46416A;
+  @define-color accent #94BA81;
   @define-color selection_bg #EFECF4;
-  @define-color selection_fg #94BA81;
+  @define-color selection_fg #EFECF4;
   @define-color cursor #94BA81;
   @define-color green #94BA81;
   @define-color yellow #EAE43E;

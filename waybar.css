@@ -1,5 +1,5 @@
 @define-color background #26173E;
-@define-color foreground #EFECF4;
+@define-color foreground #94BA81;
 @define-color border alpha(@accent, 0.5);
 @define-color accent #855E8D;
 @define-color fire #f18902;
@@ -22,6 +22,10 @@ window#waybar {
     background: linear-gradient(to bottom, @panel-tint, @panel);
     border: 1px solid @border;
     border-radius: 12px;
+}
+
+#workspaces button {
+    color: @foreground;
 }
 
 #workspaces button.active,

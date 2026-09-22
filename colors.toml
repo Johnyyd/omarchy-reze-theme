@@ -1,5 +1,5 @@
 # Accent and UI colors
-accent = "#46416A"
+accent = "#94BA81"
 active_border_color = "#3E3633"
 active_tab_background = "#3E3633"
 
@@ -11,7 +11,7 @@ foreground = "#EFECF4"
 background = "#26173E"
 
 # Selection colors
-selection_foreground = "#94BA81"
+selection_foreground = "#EFECF4"
 selection_background = "#EFECF4"
 
 # Normal colors (ANSI 0-7)

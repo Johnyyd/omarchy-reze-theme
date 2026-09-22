@@ -26,7 +26,7 @@ foreground = "#26173E"
 background = "#EFECF4"
 
 [colors.selection]
-text = "#94BA81"
+text = "#EFECF4"
 background = "#EFECF4"
 
 [colors.normal]
