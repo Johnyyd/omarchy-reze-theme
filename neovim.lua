@@ -24,7 +24,7 @@ return {
         cyan = "#94BA81",
         blue = "#46416A",
         magenta = "#855E8D",
-        brown = "#3E3633",
+        brown = "#725641",
 
         bright_red = "#FF003C",
         bright_yellow = "#f18902",

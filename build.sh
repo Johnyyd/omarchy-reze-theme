@@ -58,6 +58,18 @@ COLOR13="$(get_color 'color13')"
 COLOR14="$(get_color 'color14')"
 COLOR15="$(get_color 'color15')"
 
+# Reze Café & Florist Nuance Palette
+SAGE_GREEN="$(get_color 'sage_green')"
+ALABASTER_GREY="$(get_color 'alabaster_grey')"
+GOLDEN_SAND="$(get_color 'golden_sand')"
+DUSTY_TAUPE="$(get_color 'dusty_taupe')"
+SHADOW_GREY="$(get_color 'shadow_grey')"
+CHARCOAL="$(get_color 'charcoal')"
+COFFEE_BEAN="$(get_color 'coffee_bean')"
+BONE="$(get_color 'bone')"
+CHARCOAL_BROWN="$(get_color 'charcoal_brown')"
+PINE_TEAL="$(get_color 'pine_teal')"
+
 echo "✅ Extracted palette from colors.toml"
 
 # 1. Generate colors.css
@@ -96,6 +108,18 @@ cat > "$REPO_DIR/colors.css" <<EOF
   @define-color green $GREEN;
   @define-color yellow $YELLOW;
   @define-color red $RED;
+
+  /* Reze Café & Florist Nuance Palette (Complementary Accents) */
+  @define-color sage_green $SAGE_GREEN;
+  @define-color alabaster_grey $ALABASTER_GREY;
+  @define-color golden_sand $GOLDEN_SAND;
+  @define-color dusty_taupe $DUSTY_TAUPE;
+  @define-color shadow_grey $SHADOW_GREY;
+  @define-color charcoal $CHARCOAL;
+  @define-color coffee_bean $COFFEE_BEAN;
+  @define-color bone $BONE;
+  @define-color charcoal_brown $CHARCOAL_BROWN;
+  @define-color pine_teal $PINE_TEAL;
 EOF
 
 echo "✅ Generated colors.css"

@@ -21,7 +21,7 @@
   --text-title-h3: #855E8D;
   --text-title-h4: #EAE43E;
   --text-title-h5: #F18902;
-  --text-title-h6: #F4DCCE;
+  --text-title-h6: #D8CEBF;
 
   /* Links and accents */
   --text-link: #94BA81;
@@ -45,8 +45,8 @@
 
   /* Tags */
   --tag-color: #EFECF4;
-  --tag-background: #332050;
-  --tag-background-hover: #46416A;
+  --tag-background: #305144;
+  --tag-background-hover: #494655;
 
   /* Graph View */
   --graph-line: #554B67;
@@ -66,7 +66,7 @@
 
 /* Code blocks & inline code */
 .markdown-rendered code, .cm-inline-code {
-  color: #94BA81;
+  color: #74A775;
   background-color: rgba(70, 65, 106, 0.4);
   border-radius: 4px;
 }
@@ -79,11 +79,11 @@
 
 /* Syntax highlighting (CodeMirror) */
 .cm-s-obsidian span.cm-keyword { color: #FE4646; font-weight: bold; }
-.cm-s-obsidian span.cm-string { color: #94BA81; }
-.cm-s-obsidian span.cm-number { color: #EAE43E; }
+.cm-s-obsidian span.cm-string { color: #74A775; }
+.cm-s-obsidian span.cm-number { color: #D2D377; }
 .cm-s-obsidian span.cm-comment { color: #855E8D; font-style: italic; }
 .cm-s-obsidian span.cm-operator { color: #FE4646; }
-.cm-s-obsidian span.cm-def { color: #F4DCCE; }
+.cm-s-obsidian span.cm-def { color: #D8CEBF; }
 .cm-s-obsidian span.cm-variable { color: #EFECF4; }
 .cm-s-obsidian span.cm-property { color: #855E8D; }
 
@@ -101,9 +101,9 @@
 
 /* Blockquotes */
 .markdown-rendered blockquote {
-  border-left: 3px solid #94BA81;
-  background: rgba(70, 65, 106, 0.15);
-  color: #F4DCCE;
+  border-left: 3px solid #74A775;
+  background: rgba(43, 35, 43, 0.45);
+  color: #DFE4DE;
   border-radius: 0 4px 4px 0;
   padding: 0.5rem 1rem;
 }

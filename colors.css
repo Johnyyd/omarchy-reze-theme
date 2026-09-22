@@ -12,7 +12,7 @@
   @define-color color4 #46416A;
   @define-color color5 #F4DCCE;
   @define-color color6 #F18902;
-  @define-color color7 #00e131ff;
+  @define-color color7 #00E131;
   @define-color color8 #554B67;
   @define-color color9 #FF003C;
   @define-color color10 #373739;
@@ -32,3 +32,15 @@
   @define-color green #94BA81;
   @define-color yellow #EAE43E;
   @define-color red #FF003C;
+
+  /* Reze Café & Florist Nuance Palette (Complementary Accents) */
+  @define-color sage_green #74A775;
+  @define-color alabaster_grey #DFE4DE;
+  @define-color golden_sand #D2D377;
+  @define-color dusty_taupe #978977;
+  @define-color shadow_grey #2B232B;
+  @define-color charcoal #494655;
+  @define-color coffee_bean #725641;
+  @define-color bone #D8CEBF;
+  @define-color charcoal_brown #454640;
+  @define-color pine_teal #305144;

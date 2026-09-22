@@ -31,7 +31,7 @@ Restore previous configuration at any time with:
 To install directly from the remote git repository:
 
 ```bash
-omarchy-theme-install https://github.com/tringuyen/omarchy-reze-theme
+omarchy-theme-install https://github.com/Johnyyd/omarchy-reze-theme
 ```
 
 ## What's Included
@@ -40,15 +40,18 @@ omarchy-theme-install https://github.com/tringuyen/omarchy-reze-theme
 - **Terminals**: Clean transparent background configurations (`0.80` opacity, blur disabled) for Kitty, Alacritty, Ghostty, Foot, and Warp.
 - **TUIs & Monitors**: Native transparent terminal backgrounds for `btop` (`main_bg=""`), `helix` (`ui.background={}`), and `neovim`. Custom meter gradients and audio waveforms in `btop` and `cava`.
 - **VS Code / Cursor / VSCodium**: Full multi-color syntax highlighting (`vscode-theme.json`) covering TextMate scopes and semantic tokens:
-  - **Keywords & Control Flow**: `#FF003C` (Bomb Devil Crimson)
+  - **Keywords & Control Flow**: `#FF003C` (Bomb Devil Crimson) & `#FE4646` (Blast Coral)
   - **Functions & Methods**: `#EAE43E` (Detonation Spark Yellow)
-  - **Types & Interfaces**: `#855E8D` (Lilac Mist)
-  - **Strings & Secondary Accents**: `#F4DCCE` (Peach Cream)
-  - **Variables & Parameters**: `#94BA81` (Sage Green Eyes)
-  - **Numbers & Constants**: `#F18902` (Fuse Amber)
-  - **Comments & Documentation**: `#554B67` (Elevated Purple Slate)
-- **Editors & TUIs**: Native configurations for Neovim (`aether.nvim` v3 with LazyVim), Helix, Zed, Pi, and Claude CLI.
-- **Fastfetch**: Custom Reze logo with slate violet, lilac, and spark yellow color accents (`fastfetch.jsonc`).
+  - **Types & Interfaces**: `#855E8D` & `#D4B8E0` (Lilac Mist)
+  - **Strings**: `#74A775` (Natural Sage Green)
+  - **Numbers & Regex**: `#D2D377` (Golden Sand)
+  - **Parameters & Headings**: `#D8CEBF` (Bone Parchment)
+  - **Constants & Operators**: `#F18902` (Combustion Fuse Amber) & `#FE4646` (Blast Coral)
+  - **Comments & Documentation**: `#6C6280` & `#855E8D` (Muted Slate Purple)
+- **Obsidian**: Complete dark Reze theme (`obsidian.css`) with H1–H6 semantic gradients, natural sage code blocks, golden sand numbers, pine teal tags, and warm alabaster quotes.
+- **Zed Editor**: Native Reze color scheme (`aether.zed.json`) with tuned dark surfaces, tabs, active lines, and syntax scopes.
+- **Neovim & Helix**: Integrated configurations for Neovim (`aether.nvim` v3 with LazyVim) and Helix (`helix.toml`).
+- **Fastfetch**: Custom Reze logo (`fastfetch-logo.png`) with slate violet, lilac, and spark yellow color accents (`fastfetch.jsonc`).
 - **Desktop Integrations**: Styled layouts for Waybar, Mako, Walker, SwayOSD, and Hyprlock.
 - **Vencord Theme**: Standalone [Vencord theme](vencord.theme.css) with custom layered treatment for Discord.
 
@@ -72,36 +75,43 @@ To restore your previous Fastfetch configuration or system default:
 
 <table>
   <tr>
-    <td><img src="backgrounds/01-reze.jpg" width="220" alt="Reze 01"></td>
-    <td><img src="backgrounds/02-reze.jpg" width="220" alt="Reze 02"></td>
-    <td><img src="backgrounds/03-reze.jpg" width="220" alt="Reze 03"></td>
+    <td><img src="backgrounds/reze-1.jpg" width="220" alt="Reze 01"></td>
+    <td><img src="backgrounds/reze-2.jpg" width="220" alt="Reze 02"></td>
+    <td><img src="backgrounds/reze-3.jpg" width="220" alt="Reze 03"></td>
   </tr>
   <tr>
-    <td><img src="backgrounds/04-reze.jpg" width="220" alt="Reze 04"></td>
-    <td><img src="backgrounds/05-reze.jpg" width="220" alt="Reze 05"></td>
-    <td><img src="backgrounds/06-reze.jpg" width="220" alt="Reze 06"></td>
+    <td><img src="backgrounds/reze-4.jpg" width="220" alt="Reze 04"></td>
+    <td><img src="backgrounds/reze-5.jpg" width="220" alt="Reze 05"></td>
+    <td><img src="backgrounds/reze-6.jpg" width="220" alt="Reze 06"></td>
   </tr>
   <tr>
-    <td><img src="backgrounds/07-reze.jpg" width="220" alt="Reze 07"></td>
-    <td><img src="backgrounds/08-reze.jpg" width="220" alt="Reze 08"></td>
-    <td><img src="backgrounds/09-reze.jpg" width="220" alt="Reze 09"></td>
+    <td><img src="backgrounds/reze-7.jpg" width="220" alt="Reze 07"></td>
+    <td><img src="backgrounds/reze-8.jpg" width="220" alt="Reze 08"></td>
+    <td><img src="backgrounds/reze-9.jpg" width="220" alt="Reze 09"></td>
+  </tr>
+  <tr>
+    <td><img src="backgrounds/reze-10.jpg" width="220" alt="Reze 10"></td>
+    <td><img src="backgrounds/reze-11.jpg" width="220" alt="Reze 11"></td>
+    <td><img src="backgrounds/reze-12.jpg" width="220" alt="Reze 12"></td>
   </tr>
 </table>
 
 ### Live Wallpapers (.mp4)
 
-The theme supports animated video wallpapers located in `backgrounds/`:
+The theme bundles 5 animated video loops located in `backgrounds/`:
 
-- `reze-cafe-ambient.mp4` (Reze Cafe Ambient)
-- `reze-bomb-devil-transformation.mp4` (Bomb Devil Transformation)
-- `reze-night-sky.mp4` (Reze Night Sky)
-- `reze-fireworks-festival.mp4` (Fireworks Festival)
+- `reze-chainsaw-man-1-moewalls-com.mp4` (Chainsaw Man Reze Loop 1)
+- `reze-chainsaw-man-moewalls-com.mp4` (Reze Cafe Aesthetic Loop)
+- `reze-bomb-devil-chainsaw-man-moewalls-com.mp4` (Bomb Devil Transformation)
+- `reze-rainy-night-chainsaw-man-moewalls-com.mp4` (Reze Rainy Night Atmosphere)
+- `reze-sunset-serenity-chainsaw-man-moewalls-com.mp4` (Sunset Serenity)
 
-These looping video wallpapers are directly compatible with the [Omarchy Live Wallpaper plugin](https://github.com/yesheytenzin/live-wallpaper). Once the plugin is installed:
+These looping video wallpapers are directly compatible with the [Omarchy Live Wallpaper plugin](https://github.com/yesheytenzin/live-wallpaper) and `mpvpaper`. Once the plugin is installed:
 1. Open **Style → Background** (or double-click an empty area on your desktop).
 2. Select any video preview to start playback immediately.
 
 ## Requirements
 
 - Omarchy 4.0 (Quattro) for native shell and Hyprland Lua treatment
-- `Yaru-magenta` icon theme
+- `Yaru-purple` (or `Yaru-sage`) icon theme
+- Optional animated-wallpaper renderer (`mpvpaper` or Omarchy Live Wallpaper plugin) for the bundled MP4 loops

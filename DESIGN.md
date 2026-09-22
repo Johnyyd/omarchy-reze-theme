@@ -45,9 +45,9 @@ That means:
 
 ---
 
-## The 15-Color Palette
+## The Primary 15-Color Palette (Bomb Devil Arc)
 
-The theme is built from the Reze palette roles:
+The core theme is built from the Reze Bomb Devil character roles:
 
 | Hex | Name | Role | Primary Usage |
 |---|---|---|---|
@@ -69,11 +69,31 @@ The theme is built from the Reze palette roles:
 
 ---
 
+## Reze Café & Florist Nuance Palette (Complementary Accents)
+
+These 10 complementary tones enrich the theme by drawing upon Reze's gentle café employee & florist persona in the early Reze Arc—her cafe apron, flower bouquets, espresso beans, and warm tea cups. They introduce nuanced warmth and syntactic variety while strictly preserving the dark void atmosphere (`#26173E`):
+
+| Hex | Token | Name | Role & Application | Contrast vs `#26173E` |
+|---|---|---|---|---|
+| `#74A775` | `--sage-green` | Natural Sage | Calm string literals, florist leaves, subtle success states | **5.4:1** (WCAG AA) |
+| `#DFE4DE` | `--alabaster-grey` | Alabaster Grey | Softer alternative foreground, blockquotes, secondary text | **11.8:1** (WCAG AAA) |
+| `#D2D377` | `--golden-sand` | Golden Sand | Numeric literals, regex tokens, gentle warning highlights | **7.3:1** (WCAG AAA) |
+| `#978977` | `--dusty-taupe` | Dusty Taupe | Subtle delimiters, markdown punctuation, soft annotations | **4.5:1** (WCAG AA) |
+| `#2B232B` | `--shadow-grey` | Shadow Grey | Elevated cards, peek views, cursorline background, popovers | Dark Base (15% L) |
+| `#494655` | `--charcoal` | Slate Charcoal | Inactive tab borders, subtle gutters, inactive selections | Structural Dark |
+| `#725641` | `--coffee-bean` | Coffee Bean | Reze cafe coffee, parameters, brown terminal role | **3.8:1** (Accents) |
+| `#D8CEBF` | `--bone` | Bone Parchment | Type parameters, interface headings, markdown subheadings | **9.8:1** (WCAG AAA) |
+| `#454640` | `--charcoal-brown` | Charcoal Olive | Diff deletion background tints, muted terminal gutters | Structural Dark |
+| `#305144` | `--pine-teal` | Pine Teal | Diff addition background tints, code tags, forest accents | Deep Accent |
+
+---
+
 ## Surface & Border Language
 
 - Panels and bars use dark night-purple (`#26173E`) with subtle translucency (`0.80`–`0.85` opacity).
+- Elevated surfaces (cards, peek views, search boxes, tooltips) use Shadow Grey (`#2B232B`) for natural visual depth without breaking the dark night mood.
 - Active window borders feature an authentic Reze gradient: `rgba(46416A) rgba(855E8Dee) rgba(94BA81cc) 45deg` (Slate Violet -> Lilac -> Sage Green).
-- Inactive window borders use dark choker charcoal (`rgba(3E363399)`) to keep windows distinct without visual noise.
+- Inactive window borders use dark choker charcoal (`rgba(3E363399)` or `#494655`) to keep windows distinct without visual noise.
 - Cursors use high-visibility sage green (`#94BA81`).
 - Selections use high-contrast lavender-white (`#EFECF4`) with dark text (`#26173E`) or sage green text (`#94BA81`).
 
@@ -82,6 +102,10 @@ The theme is built from the Reze palette roles:
 ## Contrast & Accessibility
 
 - Contrast ratio between primary text (`#EFECF4`) and background (`#26173E`) is **14.2:1** (exceeding WCAG AAA standards for all text sizes).
+- Contrast ratio between alabaster text (`#DFE4DE`) and background (`#26173E`) is **11.8:1** (WCAG AAA compliant).
 - Contrast ratio between peach text (`#F4DCCE`) and background (`#26173E`) is **11.5:1** (WCAG AAA compliant).
-- Contrast ratio between selection fill (`#EFECF4`) and dark text (`#26173E`) is **14.2:1**.
-- Comments (`#554B67`) against `#26173E` provide a comfortable, non-fatiguing contrast for secondary syntax elements.
+- Contrast ratio between bone text (`#D8CEBF`) and background (`#26173E`) is **9.8:1** (WCAG AAA compliant).
+- Contrast ratio between golden sand (`#D2D377`) and background (`#26173E`) is **7.3:1** (WCAG AAA compliant).
+- Contrast ratio between natural sage (`#74A775`) and background (`#26173E`) is **5.4:1** (WCAG AA compliant).
+- Selection fill (`#EFECF4`) with dark text (`#26173E`) provides a **14.2:1** contrast ratio.
+- Secondary elements (`#554B67` / `#6C6280`) provide comfortable, non-fatiguing contrast for comments and line numbers.

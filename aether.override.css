@@ -26,6 +26,18 @@
 @define-color bright_cyan #FE4646;
 @define-color bright_white #EFECF4;
 
+/* Reze Café & Florist Nuance Colors */
+@define-color sage_green #74A775;
+@define-color alabaster_grey #DFE4DE;
+@define-color golden_sand #D2D377;
+@define-color dusty_taupe #978977;
+@define-color shadow_grey #2B232B;
+@define-color charcoal #494655;
+@define-color coffee_bean #725641;
+@define-color bone #D8CEBF;
+@define-color charcoal_brown #454640;
+@define-color pine_teal #305144;
+
 /* Base GTK theme variables */
 @define-color theme_bg_color @background;
 @define-color theme_fg_color @foreground;

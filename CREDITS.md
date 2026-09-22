@@ -5,15 +5,22 @@
 - **Tatsuki Fujimoto** — Creator of *Chainsaw Man* and the character Reze (Bomb Devil / Bomb Girl).
 - **MAPPA** — Animation production for *Chainsaw Man*.
 - **Anime-Colors.com** — Reference color palette card for Reze (`reze.png`).
+- **MoeWalls.com** — Reze animated live wallpaper video loops (`backgrounds/*.mp4`).
 
 ---
 
 ## Color Palette
 
-The official 15-color Reze theme palette is derived directly from:
-- Character design reference by Anime-Colors.com (`reze.png`).
-- Reze's iconic visual motifs: slate violet hair (`#46416A`), dark choker/attire (`#3E3633`), lavender-white shirt (`#EFECF4`), peach skin (`#F4DCCE`), and emerald/sage green eyes (`#94BA81`).
-- Explosive Bomb Devil detonation sparks (`#EAE43E`), fuse amber (`#F18902`), and blast crimson (`#FF003C`).
+The official Reze theme palette combines two expressive dimensions:
+- **Primary Character & Bomb Devil Arc (15 colors)**: Derived directly from the character design reference card (`reze.png`), capturing Reze's slate violet hair (`#46416A`), dark choker/attire (`#3E3633`), lavender-white shirt (`#EFECF4`), peach skin (`#F4DCCE`), emerald/sage green eyes (`#94BA81`), and explosive detonation sparks (`#EAE43E`), fuse amber (`#F18902`), and blast crimson (`#FF003C`).
+- **Reze Café & Florist Nuance Palette (10 colors)**: Complementary tones reflecting Reze's café employee persona and flower bouquets—natural sage (`#74A775`), warm alabaster (`#DFE4DE`), golden sand (`#D2D377`), dusty taupe (`#978977`), shadow grey (`#2B232B`), slate charcoal (`#494655`), coffee bean (`#725641`), bone parchment (`#D8CEBF`), charcoal olive (`#454640`), and pine teal (`#305144`).
+
+---
+
+## Wallpapers & Media Assets
+
+- **Static Wallpapers (`backgrounds/reze-*.jpg`)**: Curated high-resolution illustrations and anime key art from the Chainsaw Man Reze Arc.
+- **Live Video Loops (`backgrounds/*.mp4`)**: Animated loops provided courtesy of MoeWalls.com for use with `mpvpaper` and the Omarchy Live Wallpaper plugin.
 
 ---
 
