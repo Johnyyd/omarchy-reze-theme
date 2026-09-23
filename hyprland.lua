@@ -3,10 +3,17 @@ local inactive_border_color = "rgba(3E363399)"
 
 hl.config({
   general = {
+    border_size = 2,
+    gaps_in = 8,
+    gaps_out = 14,
     col = {
       active_border = active_border_color,
       inactive_border = inactive_border_color,
     },
+  },
+
+  decoration = {
+    rounding = 12,
   },
 
   group = {

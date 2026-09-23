@@ -54,6 +54,20 @@
   --graph-node-focused: #FE4646;
   --graph-node-tag: #855E8D;
   --graph-node-attachment: #EAE43E;
+
+  /* Radii - Apple standard (macOS Sequoia / Sonoma) */
+  --radius-xs: 4px;
+  --radius-s: 6px;
+  --radius-m: 8px;
+  --radius-l: 12px;
+  --radius-xl: 16px;
+  --window-radius: 12px;
+  --modal-radius: 14px;
+  --prompt-radius: 14px;
+  --tab-radius: 8px;
+  --input-radius: 8px;
+  --button-radius: 8px;
+  --card-radius: 10px;
 }
 
 /* Headers */
@@ -125,4 +139,28 @@
 
 .search-result-file-match {
   background: rgba(234, 228, 62, 0.2);
+}
+
+/* ==========================================================================
+ * Apple-standard Window & Component Corner Radii (macOS Sequoia / Sonoma spec)
+ * ========================================================================== */
+
+.modal,
+.prompt {
+  border-radius: var(--modal-radius) !important;
+}
+
+.menu,
+.suggestion-container {
+  border-radius: var(--radius-l) !important;
+}
+
+.menu-item,
+.suggestion-item {
+  border-radius: var(--radius-m) !important;
+}
+
+button,
+.clickable-icon {
+  border-radius: var(--button-radius);
 }

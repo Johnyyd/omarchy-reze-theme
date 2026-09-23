@@ -110,5 +110,20 @@ if command -v cliamp >/dev/null 2>&1 || [[ -d "$HOME/.config/cliamp" ]]; then
   cliamp theme reze 2>/dev/null || true
 fi
 
+# Sync Waybar configuration
+if command -v waybar >/dev/null 2>&1 || [[ -d "$HOME/.config/waybar" ]]; then
+  mkdir -p "$HOME/.config/waybar"
+  cp -- "$repo_dir/waybar.css" "$HOME/.config/waybar/style.css"
+  if [[ ! -f "$HOME/.config/waybar/config" && ! -f "$HOME/.config/waybar/config.jsonc" ]]; then
+    if [[ -f "$repo_dir/waybar.jsonc" ]]; then
+      cp -- "$repo_dir/waybar.jsonc" "$HOME/.config/waybar/config.jsonc"
+    fi
+  elif [[ -f "$HOME/.config/waybar/config.jsonc" ]] && grep -q "sway/workspaces" "$HOME/.config/waybar/config.jsonc" 2>/dev/null; then
+    # Replace default Sway config with Reze Hyprland-compatible config
+    cp -- "$repo_dir/waybar.jsonc" "$HOME/.config/waybar/config.jsonc"
+  fi
+  killall -SIGUSR2 waybar 2>/dev/null || true
+fi
+
 echo "Reze theme installed and applied."
 echo "Backup: $backup_dir"

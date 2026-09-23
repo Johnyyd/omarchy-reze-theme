@@ -49,7 +49,7 @@ window .box-wrapper,
     background-color: @panel;
     color: @text;
     border: 1px solid @border;
-    border-radius: 22px;
+    border-radius: 16px;
     padding: 20px 20px 18px;
     background-image: linear-gradient(to bottom, @panel-edge, transparent 30%);
     background-clip: padding-box;
@@ -67,7 +67,7 @@ window .search,
 .search {
     background-color: alpha(@background, 0.15);
     border: 1px solid @frame;
-    border-radius: 16px;
+    border-radius: 12px;
     padding: 14px 16px;
     margin: 0 0 14px 0;
     background-image: linear-gradient(to right, @support-soft, transparent 22%);
@@ -109,7 +109,7 @@ child {
 child .item-box {
     padding: 6px 14px;
     border: 1px solid transparent;
-    border-radius: 16px;
+    border-radius: 8px;
     background-color: transparent;
     color: @text;
     transition:
@@ -127,7 +127,7 @@ child:hover .item-box {
 window child:selected {
     background-color: transparent;
     background-image: linear-gradient(to right, alpha(@accent, 0.18), alpha(@accent, 0.06) 60%, transparent);
-    border-radius: 16px;
+    border-radius: 8px;
 }
 
 window child:selected .item-box {
@@ -155,7 +155,7 @@ label.dim-label,
     margin-top: 10px;
     padding: 10px 12px;
     border: 1px solid alpha(@border, 0.75);
-    border-radius: 14px;
+    border-radius: 10px;
     background-image: linear-gradient(to bottom, alpha(@color2, 0.09), alpha(@background, 0.74));
     box-shadow:
         inset 0 1px rgba(255, 255, 255, 0.028),

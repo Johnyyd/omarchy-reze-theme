@@ -195,13 +195,108 @@
         brightness(103%) contrast(94%);
 }
 
-/*   ____  __   __ */
-/*  / __ \/ /__/ / */
-/* / /_/ / / _  /  */
-/* \____/_/\_,_/   */
-/*      __     __        __       */
-/*  __ / /__  / /  ___  / /  ___  */
-/* / // / _ \/ _ \/ _ \/ _ \/ _ \ */
-/* \___/\___/_.__/\___/_.__/\___/ */
+/* ==========================================================================
+ * Apple-standard Window & Control Corner Radii (macOS Sequoia / Sonoma spec)
+ * ========================================================================== */
 
- 
+/* Main application windows */
+window,
+window.background,
+.window-frame,
+.window-content {
+    border-radius: 12px;
+}
+
+/* Maximized, fullscreen, and tiled windows remain square */
+window.maximized,
+window.fullscreen,
+window.tiled,
+window.tiled-top,
+window.tiled-right,
+window.tiled-bottom,
+window.tiled-left {
+    border-radius: 0;
+}
+
+/* Headerbars & Titlebars */
+headerbar,
+.titlebar,
+headerbar.default-decoration {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+window.maximized headerbar,
+window.fullscreen headerbar,
+window.tiled headerbar {
+    border-radius: 0;
+}
+
+/* Dialogs, Alert Dialogs, Message Dialogs & Modal Sheets (macOS standard 14px) */
+dialog,
+messagedialog,
+alertdialog,
+window.dialog,
+.dialog-action-area {
+    border-radius: 14px;
+}
+
+dialog headerbar,
+messagedialog headerbar,
+alertdialog headerbar {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Popovers, Menus, Floating Windows & Context Menus (macOS standard 12px) */
+popover,
+popover.background,
+popover contents,
+menu,
+.menu,
+.context-menu {
+    border-radius: 12px;
+}
+
+menu menuitem,
+.menu menuitem {
+    border-radius: 8px;
+}
+
+/* Cards, Grouped / Boxed Lists, Containers (macOS standard 10px) */
+card,
+.card,
+.boxed-list,
+row.activatable {
+    border-radius: 10px;
+}
+
+/* Buttons, Entries, Dropdowns & Controls (macOS standard 8px) */
+button,
+entry,
+dropdown,
+combobox,
+spinbutton {
+    border-radius: 8px;
+}
+
+/* Pill elements, Badges, Sliders, Progressbars (Apple capsule standard) */
+button.pill,
+button.circular,
+badge,
+tag,
+progressbar,
+progressbar trough,
+progressbar progress {
+    border-radius: 999px;
+}
+
+/* Tooltips & OSDs */
+tooltip,
+tooltip.background {
+    border-radius: 8px;
+}

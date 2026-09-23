@@ -10,7 +10,7 @@
 @define-color panel alpha(@background, 0.85);
 
 window#waybar {
-    background: #26173E;
+    background: transparent;
     color: @foreground;
 }
 
@@ -26,6 +26,9 @@ window#waybar {
 
 #workspaces button {
     color: @foreground;
+    border-radius: 8px;
+    padding: 0 6px;
+    margin: 2px;
 }
 
 #workspaces button.active,
@@ -48,8 +51,12 @@ menu {
     background: #26173E;
     color: @foreground;
     border: 1px solid @accent;
-    border-radius: 8px;
+    border-radius: 12px;
     opacity: 1;
+}
+
+menu menuitem {
+    border-radius: 8px;
 }
 
 tooltip label,
